@@ -7,43 +7,42 @@
     android:background="@color/green">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:text="Valitse oma ikäluokkasi"
+        android:text="Valitse aihe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/classBu1"
+        android:id="@+id/subjectBu1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="1-2lk"
+        android:text="Puut"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/classBu2"
+        android:id="@+id/subjectBu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="3-4lk"
+        android:text="Eläimet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/classBu1" />
+        app:layout_constraintTop_toBottomOf="@+id/subjectBu1" />
 
     <Button
-        android:id="@+id/classBu3"
+        android:id="@+id/subjectBu3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="5-6lk"
+        android:text="Ruoka"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/classBu2" />
-
+        app:layout_constraintTop_toBottomOf="@+id/subjectBu2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
