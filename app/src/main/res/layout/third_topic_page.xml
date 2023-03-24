@@ -7,7 +7,17 @@
     android:background="@color/green">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/classView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="5-6lk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/themeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
@@ -17,32 +27,48 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/subjectBu1"
+        android:id="@+id/subjectBu8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Puut"
+        android:width="120dp"
+        android:text="Eliölajit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/themeTextView" />
 
     <Button
-        android:id="@+id/subjectBu2"
+        android:id="@+id/subjectBu9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Eläimet"
+        android:width="120dp"
+        android:text="Maapallo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subjectBu1" />
+        app:layout_constraintTop_toBottomOf="@+id/subjectBu8" />
 
     <Button
-        android:id="@+id/subjectBu3"
+        android:id="@+id/subjectBu10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Ruoka"
+        android:width="120dp"
+        android:text="Luonto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subjectBu2" />
+        app:layout_constraintTop_toBottomOf="@+id/subjectBu9" />
+
+
+    <Button
+        android:id="@+id/subjectBu11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:width="120dp"
+        android:text="Kartta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectBu10" />
 </androidx.constraintlayout.widget.ConstraintLayout>

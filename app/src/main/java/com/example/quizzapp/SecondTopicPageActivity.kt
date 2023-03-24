@@ -3,9 +3,9 @@ package com.example.quizzapp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-class ThirdActivity : AppCompatActivity(){
+class SecondTopicPageActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.third_page)
-        }
+        setContentView(R.layout.second_topic_page)
     }
+}

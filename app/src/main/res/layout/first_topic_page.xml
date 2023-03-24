@@ -7,43 +7,55 @@
     android:background="@color/green">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/classView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="1-2lk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/themeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:text="Valitse oma ikäluokkasi"
+        android:text="Valitse aihe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/classBu1"
+        android:id="@+id/subjectBu8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="1-2lk"
+        android:width="120dp"
+        android:text="Puut"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/themeTextView" />
 
     <Button
-        android:id="@+id/classBu2"
+        android:id="@+id/subjectBu9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="3-4lk"
+        android:width="120dp"
+        android:text="Eläimet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/classBu1" />
+        app:layout_constraintTop_toBottomOf="@+id/subjectBu8" />
 
     <Button
-        android:id="@+id/classBu3"
+        android:id="@+id/subjectBu10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="5-6lk"
+        android:width="120dp"
+        android:text="Ruoka"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/classBu2" />
-
+        app:layout_constraintTop_toBottomOf="@+id/subjectBu9" />
 </androidx.constraintlayout.widget.ConstraintLayout>
