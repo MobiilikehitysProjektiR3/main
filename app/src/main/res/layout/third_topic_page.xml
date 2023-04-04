@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/subjectBu8"
+        android:id="@+id/organismBu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/themeTextView" />
 
     <Button
-        android:id="@+id/subjectBu9"
+        android:id="@+id/earthBu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -46,10 +46,10 @@
         android:text="Maapallo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subjectBu8" />
+        app:layout_constraintTop_toBottomOf="@+id/organismBu" />
 
     <Button
-        android:id="@+id/subjectBu10"
+        android:id="@+id/natureBu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -57,11 +57,11 @@
         android:text="Luonto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subjectBu9" />
+        app:layout_constraintTop_toBottomOf="@+id/earthBu" />
 
 
     <Button
-        android:id="@+id/subjectBu11"
+        android:id="@+id/mapBu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -70,5 +70,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subjectBu10" />
+        app:layout_constraintTop_toBottomOf="@+id/natureBu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

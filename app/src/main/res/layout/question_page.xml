@@ -7,55 +7,32 @@
     android:background="@color/green">
 
     <TextView
-        android:id="@+id/classView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="1-2lk"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/themeTextView"
+        android:id="@+id/questionView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:text="Valitse aihe"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/treesBu"
+        android:id="@+id/answerBu1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:width="120dp"
-        android:text="Puut"
+        android:text="Jee"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/themeTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/questionView" />
 
     <Button
-        android:id="@+id/animalsBu"
+        android:id="@+id/answerBu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:width="120dp"
-        android:text="Eläimet"
+        android:text="jee"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/treesBu" />
-
-    <Button
-        android:id="@+id/foodBu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:width="120dp"
-        android:text="Ruoka"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/animalsBu" />
+        app:layout_constraintTop_toBottomOf="@+id/answerBu1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

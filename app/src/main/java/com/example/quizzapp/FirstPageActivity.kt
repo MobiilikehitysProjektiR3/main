@@ -14,6 +14,7 @@ class FirstPageActivity : AppCompatActivity() {
         loginButton.setOnClickListener {
             val intent = Intent(this, AgeClassPageActivity::class.java)
             startActivity(intent)
+
         }
     }
 }
