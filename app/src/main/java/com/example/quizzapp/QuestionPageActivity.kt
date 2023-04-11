@@ -2,6 +2,7 @@ package com.example.quizzapp
 
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
@@ -32,6 +33,8 @@ class QuestionPageActivity  : AppCompatActivity(), View.OnClickListener {
     private var mCurrentPosition:Int = 1
     private var mQuestionList: ArrayList<Question>? = null
     private var mSelectedOptionPosition : Int = 0
+    private var mCorrectAnswers: Int = 0
+    private var mUserName: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +48,8 @@ class QuestionPageActivity  : AppCompatActivity(), View.OnClickListener {
         tvOptionThree = findViewById(R.id.tv_option_three)
         tvOptionFour = findViewById(R.id.tv_option_four)
         btnSubmit = findViewById(R.id.btn_submit)
+
+        mUserName = intent.getStringExtra(Questions.USER_NAME)
 
         mQuestionList = Questions.getQuestions()
 
@@ -117,15 +122,20 @@ class QuestionPageActivity  : AppCompatActivity(), View.OnClickListener {
                         mCurrentPosition <= mQuestionList!!.size ->{
                             setQuestion()
                         }else ->{
-                            Toast.makeText(this,
-                                "Olet läpäissyt tietovisan",
-                                Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this, ResultActivity::class.java)
+                            intent.putExtra(Questions.USER_NAME, mUserName)
+                            intent.putExtra(Questions.CORRECT_ANSWERS, mCorrectAnswers)
+                            intent.putExtra(Questions.TOTAL_QUESTIONS, mQuestionList!!.size)
+                            startActivity(intent)
+                            finish()
                         }
                     }
                 }else{
                     val question = mQuestionList?.get(mCurrentPosition -1)
                     if (question!!.correctAnswer != mSelectedOptionPosition){
                         answerView(mSelectedOptionPosition, R.drawable.wrong_option_border_bg)
+                    }else{
+                        mCorrectAnswers++
                     }
                     answerView(question.correctAnswer, R.drawable.correct_option_border_bg)
 

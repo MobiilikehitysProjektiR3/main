@@ -20,6 +20,7 @@ class FirstPageActivity : AppCompatActivity() {
                 Toast.makeText(this, "Syötä käyttäjänimesi", Toast.LENGTH_SHORT).show()
             }else{
                 val intent = Intent(this,QuestionPageActivity::class.java)
+                intent.putExtra(Questions.USER_NAME,name.text.toString())
                 startActivity(intent)
                 finish()
             }
