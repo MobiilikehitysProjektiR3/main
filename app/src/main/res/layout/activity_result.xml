@@ -23,14 +23,16 @@
         android:id="@+id/iv_trophy"
         android:layout_width="wrap_content"
         android:layout_height="409dp"
+        android:layout_marginTop="5dp"
         android:contentDescription="image"
         android:src="@drawable/congratulations" />
+
 
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:textColor="@android:color/black"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -46,10 +48,21 @@
         tools:text="Tuloksesi on 9/10" />
 
     <Button
-        android:id="@+id/btn_finish"
+        android:id="@+id/btn_scoreboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:text="Tulokset"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="@android:color/white"
         android:text="Lopeta"
         android:textColor="@color/black"

@@ -13,9 +13,12 @@
         android:theme="@style/Theme.QuizzApp"
         tools:targetApi="31">
         <activity
+            android:name=".ScoreBoardActivity"
+            android:exported="false" />
+        <activity
             android:name=".ResultActivity"
             android:exported="false"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FirstPageActivity"
             android:exported="true"
