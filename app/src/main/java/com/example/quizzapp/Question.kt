@@ -1,5 +1,6 @@
 package com.example.quizzapp
 
+//Luodaan dataluokka kysymyksille
 data class Question(
     val id: Int,
     val question: String,

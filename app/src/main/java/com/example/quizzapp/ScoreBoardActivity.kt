@@ -1,9 +1,11 @@
 package com.example.quizzapp
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ListView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -12,11 +14,14 @@ import com.example.quizzapp.UserDatabase.Companion.TABLE_NAME
 
 class ScoreBoardActivity : AppCompatActivity() {
 
+    private lateinit var btn_finish: Button
     private lateinit var list_view_scores: ListView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_score_board)
+
+        btn_finish = findViewById(R.id.btn_finish_2)
 
         // Luetaan tietokannan tiedot
         val userList = getUserList()
@@ -25,6 +30,12 @@ class ScoreBoardActivity : AppCompatActivity() {
         // Luo taulukkoadapteri, joka näyttää tiedot ListView:ssa
         val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, userList)
         list_view_scores.adapter = adapter
+
+        //Siirrytään takas etusivulle
+        btn_finish.setOnClickListener{
+            startActivity(Intent(this, FirstPageActivity::class.java))
+            finish()
+        }
     }
 
     //Haetaan tiedot tietokannasta, järjestetään ne suurimmasta pienimpään tulosten perusteella

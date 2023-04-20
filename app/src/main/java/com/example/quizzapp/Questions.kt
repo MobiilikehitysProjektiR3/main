@@ -5,6 +5,7 @@ object Questions {
     const val TOTAL_QUESTIONS: String = "total_questions"
     const val CORRECT_ANSWERS: String = "correct_answers"
 
+    // Määritetään kysymykset
     fun getQuestions(): ArrayList<Question> {
         val questionsList = ArrayList<Question>()
 
