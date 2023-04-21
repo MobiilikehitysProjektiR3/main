@@ -8,19 +8,23 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".FirstPageActivity"
-    android:background="@color/green">
+    android:background="@drawable/background">
 
 
     <TextView
         android:id="@+id/tv_app_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginBottom="30dp"
         android:text="Ymppi-Appi"
+        android:fontFamily="@font/lucky"
         android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="4"
+        android:shadowRadius="6" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_main"
@@ -36,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:gravity="center"
             android:padding="16dp">
 
             <TextView
@@ -48,15 +53,7 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginTop="16dp"
-                android:text="Syötä käyttäjänimesi"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_name"
@@ -83,6 +80,11 @@
                 android:layout_marginTop="16dp"
                 android:background="@color/white"
                 android:text="Pelaa"
+                android:padding="16dp"
+                android:shadowColor="@color/white"
+                android:shadowDx="2"
+                android:shadowDy="1.5"
+                android:shadowRadius="3"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
         </LinearLayout>

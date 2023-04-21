@@ -16,7 +16,11 @@
         android:layout_marginTop="25dp"
         android:text="Tulokset"
         android:textColor="@android:color/black"
-        android:textSize="25sp"
+        android:textSize="30sp"
+        android:shadowColor="@color/white"
+        android:shadowDx="1.9"
+        android:shadowDy="1.6"
+        android:shadowRadius="1.8"
         android:textStyle="bold" />
 
     <ImageView
@@ -25,17 +29,21 @@
         android:layout_height="409dp"
         android:layout_marginTop="5dp"
         android:contentDescription="image"
-        android:src="@drawable/congratulations" />
+        android:src="@drawable/celebrate" />
 
 
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:textColor="@android:color/black"
-        android:textSize="22sp"
+        android:textSize="25sp"
         android:textStyle="bold"
+        android:shadowColor="@color/white"
+        android:shadowDx="1.9"
+        android:shadowDy="1.6"
+        android:shadowRadius="1.8"
         tools:text="Käyttäjänimi" />
 
     <TextView
@@ -43,8 +51,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textColor="@android:color/secondary_text_dark"
-        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:shadowColor="@color/black"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
         tools:text="Tuloksesi on 9/10" />
 
     <Button
@@ -62,7 +74,7 @@
         android:id="@+id/btn_finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@android:color/white"
         android:text="Lopeta"
         android:textColor="@color/black"
