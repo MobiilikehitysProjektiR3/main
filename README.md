@@ -1,4 +1,5 @@
-# main
+# YMPPI-APPI
+
 Ymppi-appi on ammattikorkeakoulun 2. vuoden ohjelmistokehityksen opiskelijoiden toteuttama mobiilikehitysprojekti, jossa tehtiin neljän hengen ryhmätyönä applikaatio käyttäen Kotlin- teknologiaa. Päätavoitteena oli luoda innovatiivinen, opetusta tukeva mobiilisovellus, joka perustuu ala-asteen opetussuunnitelman mukaisesti ympäristö- ja luonnontieteisiin. Sovellus tarjoaa erilaisia kysymysmuotoja, jotka vaihtelevat yksinkertaisista monimutkaisiin ja sen käyttöä voidaan hyödyntää esim. kokeisiin valmistautumisessa. 
 
 Tavoitteenamme oli myös kehittää ohjelmointitaitoja Kotlin- kielellä hyödyntäen Android Studio- kehitysympäristöä. Kehityksen kohteena oli myös liiketoimintaosaaminen ja omaan tuotteeseen liittyvä lisensointi, markkinointi sekä muut yritystoiminnan osa-alueet.
